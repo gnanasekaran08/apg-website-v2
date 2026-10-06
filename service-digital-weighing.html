@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Weighing & Instant Payment Settlement | APG Recycling Singapore</title>
+  <meta name="description" content="100% transparent digital scale indicator weighing, ISRI guideline compliance, instant PayNow, corporate GIRO, and cash payouts at Pioneer Centre warehouse and on-site across Singapore.">
+  <meta name="keywords" content="digital weighing scale scrap metal Singapore, instant PayNow scrap payout Pioneer, ISRI compliant weighing Singapore, scrap metal price transparency">
+  <link rel="canonical" href="https://apgrecycling.com.sg/service-digital-weighing.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Announcement Bar -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition">About Us</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition">Scrap Materials</a>
+            <a href="services.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('Digital Weighing Inquiry')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Request Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Banner -->
+  <section class="light-banner-gradient py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <a href="services.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand-700 hover:underline mb-2">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to All Services
+        </a>
+        <span class="block text-emerald-800 font-bold text-xs uppercase tracking-widest bg-emerald-100 px-3 py-1 rounded-full w-max">Ethical Model</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Digital Weighing & Instant Payout</h1>
+        <p class="text-slate-600 text-lg">100% transparent digital scale indicator weighing, ISRI international grading compliance, and rapid PayNow, bank transfer, or cash settlement.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Body -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-8 space-y-8">
+          
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200">
+            <img src="images/copper-scrap.jpg" alt="Transparent Digital Scrap Weighing" class="w-full h-96 object-cover">
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-3xl font-extrabold text-slate-900">100% Honest & Calibrated Weighing</h2>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              Trust and transparency are the foundational pillars of APG Recycling. We recognize that clients require total confidence when selling high-value non-ferrous metals like copper, brass, and aluminum.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              All scrap metal brought to our Pioneer Centre warehouse (#01-11, No 1 Soon Lee Street) or processed on-site is weighed using high-precision digital scale indicators. Customers view the digital readout display directly in real time and receive printed weighbridge receipts.
+            </p>
+          </div>
+
+          <!-- Process Highlights Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="scale" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Calibrated Digital Scale Indicators</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Regularly calibrated and certified scales ensuring zero margin of error for small to multi-ton scrap deliveries.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="award" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">ISRI Commodity Standards</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Scrap is sorted and graded according to Institute of Scrap Recycling Industries (ISRI) guidelines for maximum fair market pricing.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="zap" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Instant PayNow Payout</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Immediate PayNow QR transfer or cash payment immediately upon weighbridge slip sign-off.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="building" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Corporate Invoicing & Terms</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Official invoices, GIRO bank transfer options, and flexible credit terms for recurring corporate accounts.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar CTA -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900">Visit Pioneer Warehouse</h3>
+            <p class="text-xs text-slate-600">Drive in for immediate transparent weighing and fast payout at No 1 Soon Lee Street.</p>
+            
+            <form @submit.prevent="submitQuote()" class="space-y-3">
+              <input type="text" x-model="fullName" placeholder="Your Name / Company *" required class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <input type="tel" x-model="phone" placeholder="Mobile / WhatsApp *" required class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <input type="email" x-model="email" placeholder="Email Address" class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <textarea x-model="notes" rows="3" placeholder="Scrap material type & estimated delivery date..." class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none"></textarea>
+              <button type="submit" class="w-full bg-brand-700 hover:bg-brand-800 text-white font-bold py-3 rounded-lg text-xs shadow transition flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i> Submit Valuation Inquiry
+              </button>
+            </form>
+          </div>
+
+          <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-200 space-y-3">
+            <h4 class="font-bold text-brand-900 text-sm flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4 text-brand-700"></i> Warehouse Desk
+            </h4>
+            <p class="text-xs text-slate-700">Call ahead to confirm today's live copper and metal rates.</p>
+            <a href="tel:+6566943394" class="block text-lg font-extrabold text-brand-700 hover:underline">+65 6694 3394</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-100 text-slate-700 text-xs py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 APG Recycling Pte Ltd. No 1 Soon Lee Street, #01-11 Pioneer Centre Singapore 627605. Phone: +65-6694 3394.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrap Services & Solutions | APG Recycling Pte Ltd Singapore</title>
+  <meta name="description" content="APG Recycling provides full recycling services across Singapore: Industrial scrap management, demolition site clearance, heavy machinery transport, steel rental, and digital weighing.">
+  <meta name="keywords" content="demolition scrap clearance Singapore, industrial scrap management Pioneer, machinery transport scrap SG, steel plate rental Singapore, digital scale scrap Singapore">
+  <link rel="canonical" href="https://apgrecycling.com.sg/services.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Top Announcement Bar (Light Theme) -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Light Theme) -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition">About Us</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition">Scrap Materials</a>
+            <a href="services.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('Services Page Quote')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Get Instant Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div x-show="mobileMenuOpen" class="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <a href="index.html" class="block font-medium text-slate-700 py-2">Home</a>
+        <a href="about.html" class="block font-medium text-slate-700 py-2">About Us</a>
+        <a href="products.html" class="block font-medium text-slate-700 py-2">Scrap Materials</a>
+        <a href="services.html" class="block font-bold text-brand-700 py-2">Services</a>
+        <a href="contact.html" class="block font-medium text-slate-700 py-2">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner (Light Theme) -->
+  <section class="light-banner-gradient text-slate-900 py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">End-to-End Solutions</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Scrap Recycling Services</h1>
+        <p class="text-slate-600 text-lg">Click on any service below to explore detailed workflows, equipment specs, and custom corporate options.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Services Grid with Individual Detail Page Links -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service 1 Card -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/steel-scrap.jpg" alt="Industrial Scrap Management" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-brand-700 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">Factory Service</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Industrial Scrap Management</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Customized factory waste skip bins, 20-ton hook-lift containers, next-day collection schedules, and monthly ESG carbon audit reports.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 flex justify-between items-center mt-4">
+            <a href="service-industrial-scrap.html" class="text-brand-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+              View Full Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button @click="openModal('Industrial Scrap Quote')" class="bg-brand-700 text-white font-bold text-[11px] px-3 py-1.5 rounded hover:bg-brand-800 transition">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Service 2 Card -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/demolition.jpg" alt="Demolition Project Salvage" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-accent-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">Site Dismantling</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Demolition Project Scrap Clearance</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Structural steel dismantling, oxy-acetylene torch cutting, rebar salvage, building clearance, and instant project scrap buyback.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 flex justify-between items-center mt-4">
+            <a href="service-demolition-salvage.html" class="text-brand-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+              View Full Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button @click="openModal('Demolition Quote')" class="bg-brand-700 text-white font-bold text-[11px] px-3 py-1.5 rounded hover:bg-brand-800 transition">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Service 3 Card -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/hero-bg.jpg" alt="Machinery Transport Logistics" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">Heavy Haulage</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Machinery Removal & Heavy Transport</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                25-ton to 100-ton lorry cranes, low-loaders, power transformer extraction, electric generator haulage, and rigging safety permits.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 flex justify-between items-center mt-4">
+            <a href="service-machinery-transport.html" class="text-brand-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+              View Full Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button @click="openModal('Machinery Transport Quote')" class="bg-brand-700 text-white font-bold text-[11px] px-3 py-1.5 rounded hover:bg-brand-800 transition">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Service 4 Card -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/steel-scrap.jpg" alt="Structural Steel Rental" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-purple-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">Steel Rental</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Structural Steel Rental & Buyback</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Mild steel road plate rental (20mm, 25mm, 30mm thick), H-beam rental for temporary construction access roads, and pre-agreed buyback terms.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 flex justify-between items-center mt-4">
+            <a href="service-steel-rental.html" class="text-brand-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+              View Full Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button @click="openModal('Steel Rental Quote')" class="bg-brand-700 text-white font-bold text-[11px] px-3 py-1.5 rounded hover:bg-brand-800 transition">Get Quote</button>
+          </div>
+        </div>
+
+        <!-- Service 5 Card -->
+        <div class="bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/copper-scrap.jpg" alt="Digital Weighing & Instant Payment" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-emerald-700 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">Ethical Payout</span>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Digital Weighing & Instant Payout</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                100% transparent digital scale indicator weighing, ISRI commodity grading, instant PayNow QR payouts, cash, and corporate GIRO terms.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 flex justify-between items-center mt-4">
+            <a href="service-digital-weighing.html" class="text-brand-700 font-bold text-xs flex items-center gap-1.5 hover:gap-2.5 transition">
+              View Full Details <i data-lucide="arrow-right" class="w-4 h-4"></i>
+            </a>
+            <button @click="openModal('Digital Weighing Quote')" class="bg-brand-700 text-white font-bold text-[11px] px-3 py-1.5 rounded hover:bg-brand-800 transition">Get Quote</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner with Site-Related Background Image -->
+  <section class="relative py-20 text-white overflow-hidden shadow-inner">
+    <!-- Site Related Background Image with Soft Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/steel-scrap.jpg" alt="APG Recycling Facilities" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/85 to-brand-900/90 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="inline-block bg-emerald-500/20 text-emerald-300 font-extrabold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-400/30">Immediate Scrap Valuation</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Ready to Sell Your Scrap Metal at Top Rates?</h2>
+      <p class="text-emerald-100 max-w-2xl mx-auto text-base sm:text-lg">Contact our team today for an instant price quotation or schedule a free site assessment at Pioneer Centre.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <button @click="openModal('CTA Banner Quote')" class="bg-white text-brand-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-emerald-50 hover:scale-[1.02] transition flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-brand-700"></i> Get Quote Now (+65 6694 3394)
+        </button>
+        <a href="https://wa.me/6566943394" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-950 text-white font-bold px-8 py-4 rounded-xl border border-emerald-500/40 shadow-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i> WhatsApp Photo Valuation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Light Theme) -->
+  <footer class="bg-slate-100 text-slate-700 text-xs py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 APG Recycling Pte Ltd. No 1 Soon Lee Street, #01-11 Pioneer Centre Singapore 627605. Phone: +65-6694 3394.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrap Metal Products & Materials | APG Recycling Pte Ltd</title>
+  <meta name="description" content="Explore APG Recycling's comprehensive scrap materials catalog: Ferrous metals (plates, rebar, beams), Non-ferrous (copper, brass, aluminum, stainless steel 304/316), cables, and machinery.">
+  <meta name="keywords" content="ferrous scrap Singapore, non ferrous metal buyer, copper wire scrap rate SG, aluminum extrusions recycling, heavy steel scrap Pioneer Centre">
+  <link rel="canonical" href="https://apgrecycling.com.sg/products.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Top Announcement Bar (Light Theme) -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Light Theme) -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition">About Us</a>
+            <a href="products.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Scrap Materials</a>
+            <a href="services.html" class="text-slate-600 hover:text-brand-700 transition">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('Products Catalog Quote')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Get Instant Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div x-show="mobileMenuOpen" class="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <a href="index.html" class="block font-medium text-slate-700 py-2">Home</a>
+        <a href="about.html" class="block font-medium text-slate-700 py-2">About Us</a>
+        <a href="products.html" class="block font-bold text-brand-700 py-2">Scrap Materials</a>
+        <a href="services.html" class="block font-medium text-slate-700 py-2">Services</a>
+        <a href="contact.html" class="block font-medium text-slate-700 py-2">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner (Light Theme) -->
+  <section class="light-banner-gradient text-slate-900 py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Commodities Catalog</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Scrap Metal Products</h1>
+        <p class="text-slate-600 text-lg">Detailed specifications of ferrous, non-ferrous, industrial wires, and heavy machinery scrap we process daily.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Products Showcase with Light Theme Cards -->
+  <section class="py-16 bg-white" x-data="apgProductsFilter()">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Filter Bar -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4 mb-12 bg-slate-50 p-4 rounded-xl border border-slate-200">
+        <!-- Category Buttons -->
+        <div class="flex flex-wrap gap-2">
+          <button @click="setCategory('all')" :class="activeCategory === 'all' ? 'bg-brand-700 text-white font-bold' : 'bg-white text-slate-700 hover:bg-slate-200 font-medium'" class="px-4 py-2 rounded-lg text-xs transition shadow-sm border border-slate-200">
+            All Scrap Types
+          </button>
+          <button @click="setCategory('ferrous')" :class="activeCategory === 'ferrous' ? 'bg-brand-700 text-white font-bold' : 'bg-white text-slate-700 hover:bg-slate-200 font-medium'" class="px-4 py-2 rounded-lg text-xs transition shadow-sm border border-slate-200">
+            Ferrous Metals
+          </button>
+          <button @click="setCategory('non-ferrous')" :class="activeCategory === 'non-ferrous' ? 'bg-brand-700 text-white font-bold' : 'bg-white text-slate-700 hover:bg-slate-200 font-medium'" class="px-4 py-2 rounded-lg text-xs transition shadow-sm border border-slate-200">
+            Non-Ferrous Metals
+          </button>
+          <button @click="setCategory('cables')" :class="activeCategory === 'cables' ? 'bg-brand-700 text-white font-bold' : 'bg-white text-slate-700 hover:bg-slate-200 font-medium'" class="px-4 py-2 rounded-lg text-xs transition shadow-sm border border-slate-200">
+            Wires & Cables
+          </button>
+          <button @click="setCategory('machinery')" :class="activeCategory === 'machinery' ? 'bg-brand-700 text-white font-bold' : 'bg-white text-slate-700 hover:bg-slate-200 font-medium'" class="px-4 py-2 rounded-lg text-xs transition shadow-sm border border-slate-200">
+            Machinery & Equipment
+          </button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="relative w-full md:w-64">
+          <input type="text" x-model="searchQuery" placeholder="Search metals (e.g. Copper, Steel)..." class="w-full bg-white border border-slate-300 rounded-lg pl-9 pr-3 py-2 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+          <i data-lucide="search" class="w-4 h-4 text-slate-400 absolute left-3 top-2.5"></i>
+        </div>
+      </div>
+
+      <!-- Product Cards Grid (Light Theme) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Ferrous Item 1 -->
+        <div x-show="matchesCategory('ferrous') && matchesSearch('Heavy Ferrous Steel Scrap', 'Plates, Beams, Columns, Anchor Chain')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-ferrous-steel.html" class="block h-48 overflow-hidden">
+              <img src="images/steel-scrap.jpg" alt="Heavy Ferrous Steel Scrap" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-slate-100 text-slate-800 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-slate-200">Ferrous Category</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-ferrous-steel.html" class="hover:text-brand-700 transition">Heavy Ferrous Steel Scrap</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Plates, anchor chains, metal buoys, scrap vessels, wire rope, structural I-beams, columns, and steel channels prepared to commodity-grade specifications.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-ferrous-steel.html" class="text-xs text-brand-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Ferrous Steel Scrap')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+        <!-- Non-Ferrous Item 2 -->
+        <div x-show="matchesCategory('non-ferrous') && matchesSearch('Copper Scrap (Millberry & Heavy)', 'Copper wire, heavy copper pipes, bare bright')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-copper-scrap.html" class="block h-48 overflow-hidden">
+              <img src="images/copper-scrap.jpg" alt="Copper Scrap Wire" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-amber-100 text-amber-900 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-amber-200">Non-Ferrous Category</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-copper-scrap.html" class="hover:text-brand-700 transition">Copper Scrap (Millberry & Heavy)</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Bare bright copper wire, heavy copper tubing, clean copper busbars, and copper fittings. Recovered for direct foundry and refiner reuse.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-copper-scrap.html" class="text-xs text-amber-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Copper Scrap')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+        <!-- Non-Ferrous Item 3 -->
+        <div x-show="matchesCategory('non-ferrous') && matchesSearch('Aluminum Sheets & Extrusions', 'Window frames, aluminum alloy, wheels, profile')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-aluminum-scrap.html" class="block h-48 overflow-hidden">
+              <img src="images/aluminum-scrap.jpg" alt="Aluminum Extrusions" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-slate-100 text-slate-800 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-slate-200">Non-Ferrous Category</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-aluminum-scrap.html" class="hover:text-brand-700 transition">Aluminum Sheets & Extrusions</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Architectural extrusions, alloy wheels, aluminum sheets, litho plates, cast aluminum engine casings, and manufacturing turnings.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-aluminum-scrap.html" class="text-xs text-slate-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Aluminum Scrap')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+        <!-- Cables Item 4 -->
+        <div x-show="matchesCategory('cables') && matchesSearch('Insulated Cables & Power Wires', 'Armored cables, copper wire harness, sub-station lines')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-cables-wire.html" class="block h-48 overflow-hidden">
+              <img src="images/copper-scrap.jpg" alt="Insulated Cables & Power Wires" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-blue-100 text-blue-900 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-blue-200">Cables & Wires</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-cables-wire.html" class="hover:text-brand-700 transition">Insulated Cables & Power Wires</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Substation high-voltage cables, copper harness wire, flexible household cables, armored power cables, and communication lines.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-cables-wire.html" class="text-xs text-blue-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Insulated Cables')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+        <!-- Machinery Item 5 -->
+        <div x-show="matchesCategory('machinery') && matchesSearch('Motors, Compressors & Transformers', 'Air-con compressors, electric dynamos, power transformers, radiators')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-machinery-motors.html" class="block h-48 overflow-hidden">
+              <img src="images/demolition.jpg" alt="Motors, Compressors & Dynamos" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-purple-100 text-purple-900 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-purple-200">Machinery & Motors</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-machinery-motors.html" class="hover:text-brand-700 transition">Motors, Compressors & Dynamos</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Commercial air-con chillers, radiators, electric motor stators, heavy transformers, dynamos, and industrial power equipment scrap.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-machinery-motors.html" class="text-xs text-purple-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Machinery & Motors')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+        <!-- Non-Ferrous Item 6 -->
+        <div x-show="matchesCategory('non-ferrous') && matchesSearch('Stainless Steel 304 & 316', 'Grade 304 316 stainless steel, tanks, pipes, food grade scrap')" class="bg-white border border-slate-200 rounded-2xl overflow-hidden card-hover flex flex-col justify-between shadow-sm">
+          <div>
+            <a href="product-stainless-steel.html" class="block h-48 overflow-hidden">
+              <img src="images/steel-scrap.jpg" alt="Stainless Steel 304 & 316" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+            </a>
+            <div class="p-6 space-y-3">
+              <span class="inline-block bg-emerald-100 text-brand-900 text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border border-emerald-200">Non-Ferrous Category</span>
+              <h3 class="text-xl font-bold text-slate-900"><a href="product-stainless-steel.html" class="hover:text-brand-700 transition">Stainless Steel 304 & 316</a></h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                High-grade stainless steel tanks, food-grade industrial vessel scrap, marine Grade 316 piping, and structural stainless stampings.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-100 flex justify-between items-center mt-4">
+            <a href="product-stainless-steel.html" class="text-xs text-brand-700 font-bold hover:underline flex items-center gap-1">View Details <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>
+            <button @click="openModal('Stainless Steel 304/316')" class="bg-brand-700 hover:bg-brand-800 text-white text-xs font-bold px-4 py-2 rounded-lg transition">Inquire Price</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner with Site-Related Background Image -->
+  <section class="relative py-20 text-white overflow-hidden shadow-inner">
+    <!-- Site Related Background Image with Soft Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/steel-scrap.jpg" alt="APG Recycling Facilities" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/85 to-brand-900/90 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="inline-block bg-emerald-500/20 text-emerald-300 font-extrabold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-400/30">Immediate Scrap Valuation</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Ready to Sell Your Scrap Metal at Top Rates?</h2>
+      <p class="text-emerald-100 max-w-2xl mx-auto text-base sm:text-lg">Contact our team today for an instant price quotation or schedule a free site assessment at Pioneer Centre.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <button @click="openModal('CTA Banner Quote')" class="bg-white text-brand-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-emerald-50 hover:scale-[1.02] transition flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-brand-700"></i> Get Quote Now (+65 6694 3394)
+        </button>
+        <a href="https://wa.me/6566943394" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-950 text-white font-bold px-8 py-4 rounded-xl border border-emerald-500/40 shadow-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i> WhatsApp Photo Valuation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Light Theme) -->
+  <footer class="bg-slate-100 text-slate-700 text-xs py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 APG Recycling Pte Ltd. No 1 Soon Lee Street, #01-11 Pioneer Centre Singapore 627605. Phone: +65-6694 3394.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

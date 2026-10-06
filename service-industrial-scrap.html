@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Industrial Scrap Management Services | APG Recycling Singapore</title>
+  <meta name="description" content="Turnkey industrial scrap management in Singapore. Customized container bin placement, factory scrap collection, scheduled next-day pickups, and ESG waste audit reports across Jurong, Tuas, and Pioneer.">
+  <meta name="keywords" content="industrial scrap management Singapore, factory scrap bin rental Tuas, manufacturing metal waste pickup Pioneer, corporate scrap recycling Singapore">
+  <link rel="canonical" href="https://apgrecycling.com.sg/service-industrial-scrap.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Announcement Bar -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition">About Us</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition">Scrap Materials</a>
+            <a href="services.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('Industrial Scrap Service Quote')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Request Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Service Detail Banner -->
+  <section class="light-banner-gradient py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <a href="services.html" class="inline-flex items-center gap-1 text-xs font-bold text-brand-700 hover:underline mb-2">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to All Services
+        </a>
+        <span class="block text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full w-max">Corporate Solution</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Industrial Scrap Management</h1>
+        <p class="text-slate-600 text-lg">Customized factory waste bin placement, scheduled collections, transparent digital weighing, and comprehensive ESG reporting across Singapore.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Details Body -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Content -->
+        <div class="lg:col-span-8 space-y-8">
+          
+          <div class="rounded-2xl overflow-hidden shadow-md border border-slate-200">
+            <img src="images/steel-scrap.jpg" alt="Industrial Scrap Yard Handling" class="w-full h-96 object-cover">
+          </div>
+
+          <div class="space-y-4">
+            <h2 class="text-3xl font-extrabold text-slate-900">Streamlined Factory Scrap Disposal</h2>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              Manufacturing facilities, engineering workshops, and industrial plants generate substantial quantities of metal offcuts, turnings, and stampings daily. Unmanaged industrial scrap creates workplace hazards, consumes valuable floor space, and leads to unaccounted revenue loss.
+            </p>
+            <p class="text-slate-600 leading-relaxed text-sm">
+              APG Recycling provides complete end-to-end industrial scrap management programs. We place custom-built scrap collection containers directly at your facility, establish routine collection schedules, and handle logistics with our hook-lift truck fleet.
+            </p>
+          </div>
+
+          <!-- Key Features Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="box" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Custom Container Bins</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Placement of 1.5-ton skip bins to 20-ton heavy-duty hook-lift containers tailored to your factory layout and volume.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="calendar" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Scheduled Next-Day Pickup</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Guaranteed next-day or emergency 24/7 container swaps across Jurong, Tuas, Pioneer, Woodlands, and Changi.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="scale" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">Transparent Weight Records</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Calibrated digital scale indicators print official weighbridge tickets for instant verification and auditing.
+              </p>
+            </div>
+
+            <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-2">
+              <div class="w-10 h-10 rounded-lg bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+                <i data-lucide="file-text" class="w-5 h-5"></i>
+              </div>
+              <h3 class="font-bold text-slate-900 text-base">ESG Carbon Audit Reports</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Monthly sustainability documentation calculating carbon offset and landfill diversion metrics for corporate ESG reporting.
+              </p>
+            </div>
+          </div>
+
+          <!-- Types of Factory Scrap Handled -->
+          <div class="space-y-4 pt-6">
+            <h3 class="text-2xl font-bold text-slate-900">Types of Industrial Scrap Handled</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs font-semibold text-slate-700">
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> Steel Stamping Offcuts</span>
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> CNC Machining Turnings</span>
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> Copper Wire Harness</span>
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> Aluminum Trimmings</span>
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> Stainless Steel Punchings</span>
+              <span class="bg-slate-100 p-3 rounded-lg flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-brand-700"></i> Rejected Foundry Castings</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Sidebar CTA -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm">
+            <h3 class="text-xl font-bold text-slate-900">Request Industrial Account Setup</h3>
+            <p class="text-xs text-slate-600">Speak with our industrial scrap managers to arrange a free site evaluation and container placement.</p>
+            
+            <form @submit.prevent="submitQuote()" class="space-y-3">
+              <input type="text" x-model="fullName" placeholder="Company Name *" required class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <input type="tel" x-model="phone" placeholder="Contact Phone *" required class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <input type="email" x-model="email" placeholder="Corporate Email" class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none">
+              <textarea x-model="notes" rows="3" placeholder="Factory location, expected scrap types & monthly volume..." class="w-full border border-slate-300 rounded-lg p-2.5 text-xs focus:ring-2 focus:ring-brand-700 outline-none"></textarea>
+              <button type="submit" class="w-full accent-gradient text-white font-bold py-3 rounded-lg text-xs shadow hover:brightness-110 transition flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i> Submit Account Inquiry
+              </button>
+            </form>
+          </div>
+
+          <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-200 space-y-3">
+            <h4 class="font-bold text-brand-900 text-sm flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4 text-brand-700"></i> Direct Industrial Hotline
+            </h4>
+            <p class="text-xs text-slate-700">Call our logistics desk directly for urgent scrap container swaps.</p>
+            <a href="tel:+6566943394" class="block text-lg font-extrabold text-brand-700 hover:underline">+65 6694 3394</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-100 text-slate-700 text-xs py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 APG Recycling Pte Ltd. No 1 Soon Lee Street, #01-11 Pioneer Centre Singapore 627605. Phone: +65-6694 3394.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

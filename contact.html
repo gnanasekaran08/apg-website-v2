@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | APG Recycling Pte Ltd Singapore</title>
+  <meta name="description" content="Contact APG Recycling Pte Ltd at No 1 Soon Lee Street #01-11 Pioneer Centre, SG 627605. Phone: +65-66943394, Email: sales@apgrecycling.com.sg. Schedule scrap metal pickup.">
+  <meta name="keywords" content="APG Recycling contact, Pioneer Centre scrap warehouse address, scrap metal buyer phone number Singapore, sell scrap metal email">
+  <link rel="canonical" href="https://apgrecycling.com.sg/contact.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Top Announcement Bar (Light Theme) -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Light Theme) -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition">About Us</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition">Scrap Materials</a>
+            <a href="services.html" class="text-slate-600 hover:text-brand-700 transition">Services</a>
+            <a href="contact.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('Contact Page Header Quote')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Get Instant Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div x-show="mobileMenuOpen" class="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <a href="index.html" class="block font-medium text-slate-700 py-2">Home</a>
+        <a href="about.html" class="block font-medium text-slate-700 py-2">About Us</a>
+        <a href="products.html" class="block font-medium text-slate-700 py-2">Scrap Materials</a>
+        <a href="services.html" class="block font-medium text-slate-700 py-2">Services</a>
+        <a href="contact.html" class="block font-bold text-brand-700 py-2">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Banner (Light Theme) -->
+  <section class="light-banner-gradient text-slate-900 py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Get In Touch</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">Contact APG Recycling</h1>
+        <p class="text-slate-600 text-lg">Visit our Pioneer Centre warehouse facility or reach out to our scrap specialists today.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Contact Section (Light Theme) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Direct Contact Details -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Headquarters & Warehouse</span>
+            <h2 class="text-3xl font-extrabold text-slate-900 mt-2">Pioneer Centre Facility</h2>
+          </div>
+
+          <div class="space-y-6 text-sm text-slate-600">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold shrink-0 border border-brand-100">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong class="block text-slate-900 font-bold">Office & Warehouse Address</strong>
+                <span>No 1 Soon Lee Street, #01-11 Pioneer Centre<br>Singapore 627605</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold shrink-0 border border-brand-100">
+                <i data-lucide="phone" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong class="block text-slate-900 font-bold">Telephone Hotline</strong>
+                <a href="tel:+6566943394" class="text-brand-700 font-bold hover:underline">+65 6694 3394</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold shrink-0 border border-brand-100">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong class="block text-slate-900 font-bold">Sales & Quotations Email</strong>
+                <a href="mailto:sales@apgrecycling.com.sg" class="text-brand-700 font-bold hover:underline">sales@apgrecycling.com.sg</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold shrink-0 border border-emerald-100">
+                <i data-lucide="message-square" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong class="block text-slate-900 font-bold">WhatsApp Direct Photo Valuation</strong>
+                <a href="https://wa.me/6566943394" target="_blank" class="text-emerald-700 font-bold hover:underline flex items-center gap-1">
+                  Chat +65 6694 3394 <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold shrink-0 border border-slate-200">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <strong class="block text-slate-900 font-bold">Operating Hours</strong>
+                <span>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday & Public Holidays: Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Directions Tip Card -->
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 text-xs space-y-2">
+            <h4 class="font-bold text-slate-900 flex items-center gap-1.5">
+              <i data-lucide="navigation" class="w-4 h-4 text-brand-700"></i> Transport & Driving Directions
+            </h4>
+            <p class="text-slate-600 leading-relaxed">
+              Located near Pioneer MRT Station (EW28). Convenient access via Boon Lay Way and Pioneer Road for heavy trucks, trailers, and collection vehicles.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-sm">
+            <h3 class="text-2xl font-bold text-slate-900 mb-2">Send Us an Inquiry</h3>
+            <p class="text-xs text-slate-500 mb-6">Fill in your details below to request a site visit or scrap quotation.</p>
+
+            <form @submit.prevent="submitQuote()" class="space-y-5">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name / Business Name *</label>
+                <input type="text" x-model="fullName" required class="w-full border border-slate-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="e.g. David Lim / Demolition Co.">
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Contact Phone Number *</label>
+                  <input type="tel" x-model="phone" required class="w-full border border-slate-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="+65 9123 4567">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Email Address</label>
+                  <input type="email" x-model="email" class="w-full border border-slate-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="david@company.com">
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Scrap Material Category</label>
+                <select x-model="metalType" class="w-full border border-slate-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-700 outline-none">
+                  <option>Copper & Cable Wires</option>
+                  <option>Aluminum Extrusions / Sheet</option>
+                  <option>Brass & Alloys</option>
+                  <option>Stainless Steel 304/316</option>
+                  <option>Ferrous Steel Plates / Beams</option>
+                  <option>Machinery / Motors / Compressors</option>
+                  <option>Demolition Project Scrap</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Details / Pickup Requirements</label>
+                <textarea x-model="notes" rows="4" class="w-full border border-slate-300 rounded-xl p-3 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="Describe the scrap materials, estimated weight, and preferred collection dates..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full accent-gradient text-white font-extrabold py-3.5 rounded-xl shadow-md hover:brightness-110 transition text-sm flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4"></i> Submit Inquiry Now
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Map Embed Section -->
+      <div class="mt-16 rounded-3xl overflow-hidden shadow-sm border border-slate-200">
+        <iframe title="APG Recycling Pioneer Location Map" class="w-full h-96 border-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.752538180126!2d103.6946!3d1.3328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da0f0473a258a1%3A0x67394bbecbcf5f76!2sPioneer%20Centre!5e0!3m2!1sen!2ssg!4v1700000000000!5m2!1sen!2ssg" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner with Site-Related Background Image -->
+  <section class="relative py-20 text-white overflow-hidden shadow-inner">
+    <!-- Site Related Background Image with Soft Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/steel-scrap.jpg" alt="APG Recycling Facilities" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/85 to-brand-900/90 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="inline-block bg-emerald-500/20 text-emerald-300 font-extrabold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-400/30">Immediate Scrap Valuation</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Ready to Sell Your Scrap Metal at Top Rates?</h2>
+      <p class="text-emerald-100 max-w-2xl mx-auto text-base sm:text-lg">Contact our team today for an instant price quotation or schedule a free site assessment at Pioneer Centre.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <button @click="openModal('CTA Banner Quote')" class="bg-white text-brand-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-emerald-50 hover:scale-[1.02] transition flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-brand-700"></i> Get Quote Now (+65 6694 3394)
+        </button>
+        <a href="https://wa.me/6566943394" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-950 text-white font-bold px-8 py-4 rounded-xl border border-emerald-500/40 shadow-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i> WhatsApp Photo Valuation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Light Theme) -->
+  <footer class="bg-slate-100 text-slate-700 text-xs py-8 border-t border-slate-200 text-center">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>© 2026 APG Recycling Pte Ltd. No 1 Soon Lee Street, #01-11 Pioneer Centre Singapore 627605. Phone: +65-6694 3394.</p>
+    </div>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>

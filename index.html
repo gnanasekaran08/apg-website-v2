@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APG Recycling Pte Ltd | Leading Scrap Metal Recycler Singapore</title>
+  <meta name="description" content="APG Recycling Pte Ltd (UEN 201436195N) is Singapore's premier licensed scrap metal recycling merchant in Pioneer Centre. Highest market payout rates for copper, brass, aluminum, steel, and cables.">
+  <meta name="keywords" content="scrap metal recycling Singapore, sell scrap metal Singapore, copper wire scrap rate SG, industrial scrap clearance, demolition scrap buyer Pioneer Centre, APG Recycling, steel scrap recycling Singapore">
+  <link rel="canonical" href="https://apgrecycling.com.sg/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apgrecycling.com.sg/">
+  <meta property="og:title" content="APG Recycling Pte Ltd | Leading Scrap Metal Recycler Singapore">
+  <meta property="og:description" content="Singapore's trusted scrap metal buyer. Transparent digital weighing, top competitive market rates, immediate cash/PayNow payments. Located at No 1 Soon Lee Street Pioneer Centre.">
+  <meta property="og:image" content="https://apgrecycling.com.sg/images/hero-bg.jpg">
+
+  <!-- Google Fonts & Tailwind CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              600: '#16a34a',
+              700: '#15803d',
+              800: '#166534',
+              900: '#14532d',
+            },
+            accent: {
+              500: '#f97316',
+              600: '#ea580c',
+              700: '#c2410c',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Lucide Icons & Alpine.js -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Structured Data JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RecyclingCenter",
+    "name": "APG Recycling Pte. Ltd.",
+    "image": "https://apgrecycling.com.sg/images/hero-bg.jpg",
+    "@id": "https://apgrecycling.com.sg/#organization",
+    "url": "https://apgrecycling.com.sg/",
+    "telephone": "+6566943394",
+    "email": "sales@apgrecycling.com.sg",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "No 1 Soon Lee Street, #01-11 Pioneer Centre",
+      "addressLocality": "Jurong West",
+      "postalCode": "627605",
+      "addressCountry": "SG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 1.3328,
+      "longitude": 103.6968
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-600 selection:text-white" x-data="apgQuoteModal()">
+
+  <!-- Top Announcement Bar (Light Theme) -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4 flex-wrap justify-center md:justify-start">
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+          <span class="hidden sm:inline text-slate-300">|</span>
+          <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-700"></i> UEN 201436195N • Scrap Metal Merchant</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition flex items-center gap-1 font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition flex items-center gap-1"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600"></i> sales@apgrecycling.com.sg</a>
+          <a href="https://wa.me/6566943394" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-medium px-2.5 py-0.5 rounded text-[11px] flex items-center gap-1 transition shadow-sm">
+            <i data-lucide="message-square" class="w-3 h-3"></i> WhatsApp Us
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Light Theme) -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <!-- Desktop Nav Links -->
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">Home</a>
+            <a href="about.html" class="text-slate-600 hover:text-brand-700 transition py-1">About Us</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition py-1">Scrap Materials</a>
+            <a href="services.html" class="text-slate-600 hover:text-brand-700 transition py-1">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition py-1">Contact Us</a>
+          </div>
+
+          <!-- Header CTA -->
+          <div class="hidden lg:flex items-center gap-3">
+            <button @click="openModal('General Scrap Inquiry')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Request Scrap Quote
+            </button>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu drawer -->
+      <div x-show="mobileMenuOpen" x-transition class="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <a href="index.html" class="block font-bold text-brand-700 py-2">Home</a>
+        <a href="about.html" class="block font-medium text-slate-700 py-2 border-b border-slate-100">About Us</a>
+        <a href="products.html" class="block font-medium text-slate-700 py-2 border-b border-slate-100">Scrap Materials</a>
+        <a href="services.html" class="block font-medium text-slate-700 py-2 border-b border-slate-100">Services</a>
+        <a href="contact.html" class="block font-medium text-slate-700 py-2 border-b border-slate-100">Contact Us</a>
+        <button @click="openModal('Mobile Quote Request'); mobileMenuOpen = false" class="w-full accent-gradient text-white font-bold py-3 rounded-lg text-center mt-2 shadow">
+          Get Instant Scrap Quote
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section (Light Theme) -->
+  <section class="relative bg-gradient-to-br from-emerald-50/80 via-white to-slate-50 text-slate-900 py-20 lg:py-24 border-b border-slate-200 overflow-hidden">
+    
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Hero Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-100 border border-emerald-200 text-brand-800 text-xs font-bold uppercase tracking-wider shadow-sm">
+            <span class="w-2 h-2 rounded-full bg-brand-700 animate-pulse"></span>
+            Singapore's Premier Scrap Recycling Merchant
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight">
+            Transparent Scrap Metal Recycling & <span class="text-brand-700">Instant PayNow Payouts</span>
+          </h1>
+
+          <p class="text-slate-600 text-lg sm:text-xl font-normal leading-relaxed">
+            APG Recycling Pte. Ltd. (UEN: 201436195N) purchases all categories of ferrous & non-ferrous metals, cables, heavy machinery, and demolition scrap across Singapore. We offer calibrated digital weighing, next-day factory pick-up, and top market rates.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <button @click="openModal('Hero Section Quote')" class="accent-gradient text-white font-bold px-8 py-4 rounded-xl text-base shadow-lg hover:shadow-xl hover:scale-[1.02] transition flex items-center justify-center gap-3">
+              <i data-lucide="truck" class="w-5 h-5"></i> Request On-Site Pickup
+            </button>
+            <a href="products.html" class="bg-white hover:bg-slate-100 text-slate-800 font-bold px-6 py-4 rounded-xl text-base border border-slate-300 shadow-sm transition flex items-center justify-center gap-2">
+              <i data-lucide="layers" class="w-5 h-5 text-brand-700"></i> Explore Scrap Materials
+            </a>
+          </div>
+
+          <!-- Trust Highlights -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-200 text-xs font-semibold text-slate-600">
+            <div class="flex items-center gap-2">
+              <i data-lucide="shield-check" class="w-5 h-5 text-brand-700 shrink-0"></i>
+              <span>10+ Yrs Pioneer Centre</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="scale" class="w-5 h-5 text-brand-700 shrink-0"></i>
+              <span>Digital Calibrated Scales</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="zap" class="w-5 h-5 text-brand-700 shrink-0"></i>
+              <span>Instant PayNow / Cash</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i data-lucide="award" class="w-5 h-5 text-brand-700 shrink-0"></i>
+              <span>ISRI Guideline Compliant</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Image Showcase -->
+        <div class="lg:col-span-5">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white group">
+            <img src="images/hero-bg.jpg" alt="APG Recycling Yard Operations" class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel-light rounded-xl border border-white/80 shadow-md">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-brand-700 text-white flex items-center justify-center font-bold shrink-0">
+                  <i data-lucide="award" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="text-slate-900 font-bold text-sm">Pioneer Centre Warehouse Facility</h4>
+                  <p class="text-slate-600 text-xs">No 1 Soon Lee Street, #01-11 Singapore 627605</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Commodity Benchmark Section -->
+  <section class="py-12 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+        <div>
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Transparent Market Pricing</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Singapore Reference Market Rates</h2>
+        </div>
+        <button @click="openModal('Rate Lock Inquiry')" class="bg-brand-700 hover:bg-brand-800 text-white font-bold text-xs px-4 py-2.5 rounded-lg shadow-sm transition flex items-center gap-2">
+          <i data-lucide="lock" class="w-4 h-4"></i> Lock Today's Scrap Rates
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Heavy Copper</span>
+          <div class="text-lg font-extrabold text-brand-700">$9.80 - $11.50</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Insulated Wire</span>
+          <div class="text-lg font-extrabold text-brand-700">$3.50 - $5.20</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Honey Brass</span>
+          <div class="text-lg font-extrabold text-brand-700">$5.80 - $7.20</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Aluminum Extrusions</span>
+          <div class="text-lg font-extrabold text-brand-700">$2.20 - $2.90</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Stainless Steel 304</span>
+          <div class="text-lg font-extrabold text-brand-700">$1.60 - $2.10</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 text-center space-y-1 shadow-sm">
+          <span class="text-[11px] font-bold text-slate-500 uppercase">Heavy Steel (HMS)</span>
+          <div class="text-lg font-extrabold text-brand-700">$0.38 - $0.58</div>
+          <span class="text-[10px] text-slate-400">per kg</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Impact Statistics Counter Section (NEW) -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="space-y-1">
+          <div class="text-4xl sm:text-5xl font-extrabold text-brand-700">10+ Years</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Pioneer Centre Singapore</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-4xl sm:text-5xl font-extrabold text-brand-700">500+</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Active Corporate Clients</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-4xl sm:text-5xl font-extrabold text-brand-700">15,000+</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Tons Recycled Annually</p>
+        </div>
+        <div class="space-y-1">
+          <div class="text-4xl sm:text-5xl font-extrabold text-brand-700">100%</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-slate-500">Digital Scale Accuracy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries We Serve Section (NEW) -->
+  <section class="py-20 bg-slate-50 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Target Sectors</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Industries We Serve Across Singapore</h2>
+        <p class="text-slate-600 text-base">Providing tailored waste clearance, logistics, and transparent buyback programs for B2B sectors.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+            <i data-lucide="building-2" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Construction & Civil Engineering</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Rebar offcuts, structural H-beams, steel plate road mats rental, temporary shoring, and building site cleanup.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-orange-100 text-accent-600 flex items-center justify-center font-bold">
+            <i data-lucide="factory" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Precision Manufacturing & Tooling</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            CNC machining turnings, aluminum extrusions, stainless steel punchings, rejected castings, and skip bin placement.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold">
+            <i data-lucide="anchor" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Marine & Offshore Shipyards</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Scrap vessel dismantling, anchor chains, marine grade 316 stainless steel, heavy plates, and dockside clearance.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+            <i data-lucide="zap" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Electrical & Mechanical (M&E)</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Armored power cables, substation copper wire, electric motor stators, power transformers, and commercial air-con chillers.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center font-bold">
+            <i data-lucide="hard-hat" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Demolition & Site Clearance Contractors</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Heavy structural beam cutting, oxy-acetylene torch rigs, mobile crane extraction, and clean site handover guarantees.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-3">
+          <div class="w-12 h-12 rounded-xl bg-slate-100 text-slate-700 flex items-center justify-center font-bold">
+            <i data-lucide="truck" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900">Commercial & Public Sector Assets</h3>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            Plant decommissioning, obsolete office equipment disposal, government asset scrapping, and certified weighbridge receipts.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section (Light Theme) -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Comprehensive Solutions</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">Industrial & Commercial Scrap Services</h2>
+        <p class="text-slate-600 text-base">We service over 500+ clients across Singapore, providing tailored logistics, site clearance, and transparent recycling planning.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="bg-slate-50/80 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/steel-scrap.jpg" alt="Industrial Scrap Management" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-brand-700 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">
+                Factory Service
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Industrial Scrap Management</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Safe, efficient removal of ongoing factory scrap, manufacturing stampings, metal trimmings, and machine waste. Custom container placement and scheduled next-day pickups.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 mt-4">
+            <a href="service-industrial-scrap.html" class="text-brand-700 font-bold text-xs flex items-center gap-2 hover:gap-3 transition">Learn More & Specs <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-slate-50/80 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/demolition.jpg" alt="Demolition Project Salvage" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-accent-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">
+                Site Clearance
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Demolition Project Salvage</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                Specialized site demolition experts assisting construction firms with structural steel dismantling, rebar recovery, plate salvage, and complete clean-site handovers.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 mt-4">
+            <a href="service-demolition-salvage.html" class="text-brand-700 font-bold text-xs flex items-center gap-2 hover:gap-3 transition">Learn More & Specs <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-slate-50/80 rounded-2xl overflow-hidden border border-slate-200 card-hover flex flex-col justify-between">
+          <div>
+            <div class="h-48 overflow-hidden relative">
+              <img src="images/copper-scrap.jpg" alt="Non-Ferrous Recycling" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+              <div class="absolute top-3 left-3 bg-blue-600 text-white text-[10px] font-extrabold px-2.5 py-1 rounded shadow-sm uppercase">
+                High-Grade Metals
+              </div>
+            </div>
+            <div class="p-6 space-y-3">
+              <h3 class="text-xl font-bold text-slate-900">Copper & Alloy Buyback</h3>
+              <p class="text-slate-600 text-xs leading-relaxed">
+                High-volume buyback of bare bright copper wire, brass fittings, insulated substation cables, and stainless steel with real-time digital scale verification.
+              </p>
+            </div>
+          </div>
+          <div class="p-6 pt-0 border-t border-slate-200/60 mt-4">
+            <a href="service-digital-weighing.html" class="text-brand-700 font-bold text-xs flex items-center gap-2 hover:gap-3 transition">Learn More & Specs <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- APG Recycling vs Traditional Merchants Comparison Table Section (NEW) -->
+  <section class="py-20 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">The APG Advantage</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Why Choose APG Recycling?</h2>
+        <p class="text-slate-600 text-base">Comparing our modern, certified recycling standards against traditional scrap buyers.</p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+        <table class="w-full text-left border-collapse text-xs sm:text-sm">
+          <thead>
+            <tr class="bg-slate-100 border-b border-slate-200 text-slate-900 font-extrabold">
+              <th class="p-4 sm:p-5">Service Feature</th>
+              <th class="p-4 sm:p-5 text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">APG Recycling Pte Ltd</th>
+              <th class="p-4 sm:p-5 text-slate-500">Traditional Scrap Buyers</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 text-slate-700">
+            <tr>
+              <td class="p-4 sm:p-5 font-bold">Weighing System</td>
+              <td class="p-4 sm:p-5 font-bold text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">Calibrated Digital Indicator Scales (100% Transparent)</td>
+              <td class="p-4 sm:p-5 text-slate-500">Manual mechanical scales / unverified estimates</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold">Payment Speed</td>
+              <td class="p-4 sm:p-5 font-bold text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">Instant PayNow, Immediate Cash, Fast Corporate GIRO</td>
+              <td class="p-4 sm:p-5 text-slate-500">Delayed cheques or manual processing</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold">Logistics Support</td>
+              <td class="p-4 sm:p-5 font-bold text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">25t - 100t Lorry Cranes & 20t Hook-Lift Container Fleet</td>
+              <td class="p-4 sm:p-5 text-slate-500">Limited transport; self-delivery required</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold">Regulatory Licensing</td>
+              <td class="p-4 sm:p-5 font-bold text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">NEA Licensed General Waste Facility & ISRI Compliant</td>
+              <td class="p-4 sm:p-5 text-slate-500">Unlicensed or informal scrap collection</td>
+            </tr>
+            <tr>
+              <td class="p-4 sm:p-5 font-bold">Sustainability & ESG</td>
+              <td class="p-4 sm:p-5 font-bold text-brand-700 bg-emerald-50/60 border-l border-r border-slate-200">Monthly Carbon Offset Reports & 100% Landfill Diversion</td>
+              <td class="p-4 sm:p-5 text-slate-500">No ESG tracking or environmental reports</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials Section (NEW) -->
+  <section class="py-20 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Verified Client Feedback</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">What Our Clients Say</h2>
+        <p class="text-slate-600 text-base">Trusted by construction contractors, factory managers, and M&E engineers across Singapore.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "APG Recycling has handled our factory's scrap steel and copper offcuts for over 3 years in Tuas. Container swaps are always on time, and their digital weighing indicator gives us full peace of mind."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <strong class="block text-slate-900 font-bold text-xs">K. H. Tan</strong>
+            <span class="text-[11px] text-slate-500">Plant Operations Manager, Tuas Precision Eng.</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "We engaged APG Recycling for a structural steel demolition site in Jurong. Their lorry crane fleet cleared over 300 tons of heavy beams effortlessly and PayNow payment was settled on the same afternoon."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <strong class="block text-slate-900 font-bold text-xs">David Lim</strong>
+            <span class="text-[11px] text-slate-500">Project Director, Civil Engineering Contractor</span>
+          </div>
+        </div>
+
+        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-4 shadow-sm flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex text-amber-500 gap-1">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed italic">
+              "Highly professional team for commercial chiller and generator scrap buyback. Their team brought proper rigging gear, took care of lifting safety permits, and offered top copper wire rates."
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-200">
+            <strong class="block text-slate-900 font-bold text-xs">Subramaniam M.</strong>
+            <span class="text-[11px] text-slate-500">Senior M&E Specialist, Facility Services</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section (SEO Accordion - Light Theme) -->
+  <section class="py-20 bg-slate-50 border-t border-b border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" x-data="{ activeFaq: 1 }">
+      <div class="text-center mb-12 space-y-3">
+        <h2 class="text-3xl font-extrabold text-slate-900">Frequently Asked Questions</h2>
+        <p class="text-slate-600 text-sm">Everything you need to know about scrap metal recycling in Singapore.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+          <button @click="activeFaq = (activeFaq === 1 ? 0 : 1)" class="w-full text-left p-5 bg-white font-bold text-slate-900 flex justify-between items-center text-sm">
+            <span>What scrap metals does APG Recycling purchase?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform" :class="{'rotate-180': activeFaq === 1}"></i>
+          </button>
+          <div x-show="activeFaq === 1" x-transition class="p-5 text-xs text-slate-600 space-y-2 border-t border-slate-200 bg-slate-50">
+            <p>We purchase all categories of metals: Ferrous metals (steel plates, structural beams, rebar, anchor chains, scrap machinery) and Non-Ferrous metals (copper wire, brass, aluminum extrusions, stainless steel 304/316, lead, zinc, nickel), as well as electric motors, air-con compressors, and industrial cables.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+          <button @click="activeFaq = (activeFaq === 2 ? 0 : 2)" class="w-full text-left p-5 bg-white font-bold text-slate-900 flex justify-between items-center text-sm">
+            <span>How do you verify the weight of the scrap metal?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform" :class="{'rotate-180': activeFaq === 2}"></i>
+          </button>
+          <div x-show="activeFaq === 2" x-transition class="p-5 text-xs text-slate-600 space-y-2 border-t border-slate-200 bg-slate-50">
+            <p>All scrap processing is carried out using calibrated digital weight indicators in strict compliance with ISRI (Institute of Scrap Recycling Industries) standards. Customers can clearly view the weighing display in real time for 100% transparency.</p>
+          </div>
+        </div>
+
+        <div class="border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+          <button @click="activeFaq = (activeFaq === 3 ? 0 : 3)" class="w-full text-left p-5 bg-white font-bold text-slate-900 flex justify-between items-center text-sm">
+            <span>Do you provide on-site pickup services for factories & job sites?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 transition-transform" :class="{'rotate-180': activeFaq === 3}"></i>
+          </button>
+          <div x-show="activeFaq === 3" x-transition class="p-5 text-xs text-slate-600 space-y-2 border-t border-slate-200 bg-slate-50">
+            <p>Yes! We offer next-day pick-ups across Singapore. We deploy customized scrap containers, crane trucks, and hook-lifts for factories, construction sites, and commercial facilities.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner with Site-Related Background Image -->
+  <section class="relative py-20 text-white overflow-hidden shadow-inner">
+    <!-- Site Related Background Image with Soft Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="images/steel-scrap.jpg" alt="APG Recycling Facilities" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/85 to-brand-900/90 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="inline-block bg-emerald-500/20 text-emerald-300 font-extrabold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-400/30">Immediate Scrap Valuation</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Ready to Sell Your Scrap Metal at Top Rates?</h2>
+      <p class="text-emerald-100 max-w-2xl mx-auto text-base sm:text-lg">Contact our team today for an instant price quotation or schedule a free site assessment at Pioneer Centre.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <button @click="openModal('CTA Banner Quote')" class="bg-white text-brand-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-emerald-50 hover:scale-[1.02] transition flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-brand-700"></i> Get Quote Now (+65 6694 3394)
+        </button>
+        <a href="https://wa.me/6566943394" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-950 text-white font-bold px-8 py-4 rounded-xl border border-emerald-500/40 shadow-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="message-circle" class="w-5 h-5 text-emerald-400"></i> WhatsApp Photo Valuation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shared Footer (Light Theme) -->
+  <footer class="bg-slate-100 text-slate-700 text-xs pt-16 pb-8 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-200">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-lg bg-brand-700 text-white flex items-center justify-center font-bold text-lg">
+              <i data-lucide="recycle" class="w-5 h-5"></i>
+            </div>
+            <span class="font-extrabold text-slate-900 text-lg tracking-tight">APG RECYCLING</span>
+          </div>
+          <p class="text-slate-600 text-xs leading-relaxed">
+            APG Recycling Pte. Ltd. (UEN: 201436195N) is an established scrap metal merchant in Singapore specializing in buying, processing, and recycling ferrous & non-ferrous scrap.
+          </p>
+          <div class="text-[11px] text-brand-700 font-bold">
+            ISRI International Standard Compliant • Pioneer Centre SG
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-sm">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-brand-700 transition">Home Page</a></li>
+            <li><a href="about.html" class="hover:text-brand-700 transition">About APG Recycling</a></li>
+            <li><a href="products.html" class="hover:text-brand-700 transition">Scrap Materials Catalog</a></li>
+            <li><a href="services.html" class="hover:text-brand-700 transition">Industrial Scrap Services</a></li>
+            <li><a href="contact.html" class="hover:text-brand-700 transition">Contact Us & Location</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Materials Purchased -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-sm">Recyclables Accepted</h4>
+          <ul class="space-y-2 text-slate-600">
+            <li>Heavy Copper / Millberry Wire</li>
+            <li>Brass, Bronze & Alloy Scrap</li>
+            <li>Aluminum Sheets & Profile</li>
+            <li>Stainless Steel 304 / 316</li>
+            <li>Structural Steel Plates & Beams</li>
+            <li>Electric Motors & Compressors</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Office -->
+        <div class="space-y-3">
+          <h4 class="text-slate-900 font-bold text-sm">Warehouse Location</h4>
+          <p class="text-slate-600">
+            <strong class="text-slate-900 block">APG Recycling Pte Ltd</strong>
+            No 1 Soon Lee Street, #01-11 Pioneer Centre<br>
+            Singapore 627605
+          </p>
+          <div class="space-y-1.5 pt-1">
+            <div class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-brand-700"></i> +65-6694 3394</div>
+            <div class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-brand-700"></i> sales@apgrecycling.com.sg</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500">
+        <p>© 2026 APG Recycling Pte Ltd. All rights reserved.</p>
+        <div class="flex items-center gap-4 text-[11px] font-medium">
+          <span>NEA Licensed Waste Facility</span>
+          <span>•</span>
+          <span>Singapore Circular Economy Partner</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quote Modal Component -->
+  <div x-show="isOpen" class="fixed inset-0 z-50 overflow-y-auto bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" x-transition>
+    <div @click.away="closeModal()" class="bg-white rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative border border-slate-200">
+      <button @click="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 p-1">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+
+      <div class="mb-6 space-y-1">
+        <span class="text-xs font-bold text-brand-700 uppercase tracking-wider">Fast Response Guaranteed</span>
+        <h3 class="text-2xl font-extrabold text-slate-900">Request Scrap Quote</h3>
+        <p class="text-slate-600 text-xs" x-text="'Inquiry regarding: ' + itemTitle"></p>
+      </div>
+
+      <form @submit.prevent="submitQuote()" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Full Name / Company Name *</label>
+          <input type="text" x-model="fullName" required class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="e.g. John Tan / ABC Construction">
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Mobile / WhatsApp *</label>
+            <input type="tel" x-model="phone" required class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="+65 9123 4567">
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address</label>
+            <input type="email" x-model="email" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="john@example.com">
+          </div>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Scrap Material Category</label>
+          <select x-model="metalType" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-brand-700 outline-none">
+            <option>Copper & Cable Wires</option>
+            <option>Aluminum Extrusions / Sheet</option>
+            <option>Brass & Alloys</option>
+            <option>Stainless Steel 304/316</option>
+            <option>Ferrous Steel Plates / Beams</option>
+            <option>Machinery / Motors / Compressors</option>
+            <option>Demolition Project Scrap</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 mb-1">Estimated Weight (kg/tons) or Pickup Notes</label>
+          <textarea x-model="notes" rows="2" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-brand-700 outline-none" placeholder="Provide approximate weight, site location, or special requirements..."></textarea>
+        </div>
+
+        <button type="submit" class="w-full accent-gradient text-white font-bold py-3 rounded-lg shadow-md hover:brightness-110 transition text-sm flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Submit Quote Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

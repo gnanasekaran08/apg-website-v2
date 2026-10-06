@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile & History | APG Recycling Pte Ltd Singapore</title>
+  <meta name="description" content="APG Recycling Pte Ltd (UEN 201436195N) is Singapore's premier licensed scrap metal merchant at Pioneer Centre. Established in 2014, specializing in ferrous, non-ferrous, demolition salvage, and ESG-compliant recycling.">
+  <meta name="keywords" content="APG Recycling company profile, scrap metal merchant Singapore, Pioneer Centre recycling, UEN 201436195N, ISRI scrap buyer Singapore, Jurong scrap yard">
+  <link rel="canonical" href="https://apgrecycling.com.sg/about.html">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] },
+          colors: {
+            brand: { 700: '#15803d', 800: '#166534', 900: '#14532d' },
+            accent: { 500: '#f97316', 600: '#ea580c' }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body class="bg-white text-slate-800 antialiased" x-data="apgQuoteModal()">
+
+  <!-- Top Announcement Bar (Light Theme) -->
+  <header class="w-full">
+    <div class="bg-slate-100 text-slate-700 text-xs py-2.5 px-4 border-b border-slate-200">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+        <div class="flex items-center gap-4">
+          <span class="flex items-center gap-1.5 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-700"></i> No 1 Soon Lee Street, #01-11 Pioneer Centre, SG 627605</span>
+          <span class="hidden sm:inline text-slate-300">•</span>
+          <span class="hidden sm:inline font-semibold text-brand-700">UEN: 201436195N</span>
+        </div>
+        <div class="flex items-center gap-4">
+          <a href="tel:+6566943394" class="hover:text-brand-700 transition font-semibold"><i data-lucide="phone" class="w-3.5 h-3.5 text-accent-600 inline"></i> +65 6694 3394</a>
+          <a href="mailto:sales@apgrecycling.com.sg" class="hover:text-brand-700 transition"><i data-lucide="mail" class="w-3.5 h-3.5 text-accent-600 inline"></i> sales@apgrecycling.com.sg</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Header (Light Theme) -->
+    <nav class="bg-white/95 backdrop-blur-md sticky top-0 z-40 border-b border-slate-200 shadow-sm" x-data="{ mobileMenuOpen: false }">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand-700 to-brand-800 text-white flex items-center justify-center font-bold text-xl shadow-md">
+              <i data-lucide="recycle" class="w-7 h-7 text-emerald-300"></i>
+            </div>
+            <div>
+              <span class="block font-extrabold text-2xl tracking-tight text-slate-900">APG RECYCLING</span>
+              <span class="block text-[11px] font-bold uppercase tracking-wider text-brand-700">Pte Ltd • Pioneer Centre Singapore</span>
+            </div>
+          </a>
+
+          <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold">
+            <a href="index.html" class="text-slate-600 hover:text-brand-700 transition">Home</a>
+            <a href="about.html" class="text-brand-700 font-bold border-b-2 border-brand-700 py-1">About Us & Profile</a>
+            <a href="products.html" class="text-slate-600 hover:text-brand-700 transition">Scrap Materials</a>
+            <a href="services.html" class="text-slate-600 hover:text-brand-700 transition">Services</a>
+            <a href="contact.html" class="text-slate-600 hover:text-brand-700 transition">Contact Us</a>
+          </div>
+
+          <div class="hidden lg:flex items-center">
+            <button @click="openModal('About Page Quote')" class="accent-gradient text-white font-bold px-5 py-2.5 rounded-lg shadow-md hover:brightness-110 transition flex items-center gap-2">
+              <i data-lucide="phone-call" class="w-4 h-4"></i> Get Instant Quote
+            </button>
+          </div>
+
+          <div class="flex lg:hidden items-center">
+            <button @click="mobileMenuOpen = !mobileMenuOpen" class="p-2 rounded-lg text-slate-600">
+              <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
+              <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div x-show="mobileMenuOpen" class="lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+        <a href="index.html" class="block font-medium text-slate-700 py-2">Home</a>
+        <a href="about.html" class="block font-bold text-brand-700 py-2">About Us</a>
+        <a href="products.html" class="block font-medium text-slate-700 py-2">Scrap Materials</a>
+        <a href="services.html" class="block font-medium text-slate-700 py-2">Services</a>
+        <a href="contact.html" class="block font-medium text-slate-700 py-2">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Subpage Header Banner (Light Theme) -->
+  <section class="light-banner-gradient text-slate-900 py-16 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-3">
+        <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-100 px-3 py-1 rounded-full">Official Company Profile</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900">APG Recycling Pte. Ltd.</h1>
+        <p class="text-slate-600 text-lg">Singapore's trusted merchant in scrap metal recovery, demolition salvage, heavy machinery logistics, and ESG circular economy solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      
+      <!-- Story & Overview -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-brand-700 font-extrabold text-xs uppercase tracking-wider bg-brand-50 px-3 py-1 rounded-full border border-brand-100">UEN 201436195N • Incorporated 2014</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">A Decade of Excellence in Singapore's Scrap & Metal Salvage Market</h2>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            <strong>APG Recycling Pte. Ltd.</strong> (UEN: <code>201436195N</code>) was incorporated on December 4, 2014, in Singapore. Strategically headquartered at <strong>No. 1 Soon Lee Street, #01-11 Pioneer Centre, Singapore 627605</strong> in the heart of Jurong Industrial Estate, APG Recycling has established itself as one of the region's most reputable merchants for scrap metal trading, factory clearance, and industrial salvage.
+          </p>
+          <p class="text-slate-600 leading-relaxed text-sm">
+            Our company operates a fully equipped primary warehouse facility specializing in the wholesale purchasing, grading, sorting, and processing of non-ferrous metals (copper, brass, aluminum, stainless steel) and heavy ferrous structural steel. In addition, APG provides turnkey site demolition recovery, heavy machinery transport, and road plate rental services for construction contractors across Singapore.
+          </p>
+
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-100">
+            <div class="space-y-1">
+              <span class="text-3xl font-extrabold text-brand-700">10+ Yrs</span>
+              <span class="block text-xs font-semibold text-slate-500">Industry Pioneer</span>
+            </div>
+            <div class="space-y-1">
+              <span class="text-3xl font-extrabold text-brand-700">500+</span>
+              <span class="block text-xs font-semibold text-slate-500">Corporate Clients</span>
+            </div>
+            <div class="space-y-1">
+              <span class="text-3xl font-extrabold text-brand-700">15,000t</span>
+              <span class="block text-xs font-semibold text-slate-500">Annual Recycled Volume</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-white group">
+            <img src="images/hero-bg.jpg" alt="APG Recycling Pioneer Centre Yard" class="w-full h-96 object-cover group-hover:scale-105 transition duration-500">
+            <div class="absolute bottom-4 left-4 right-4 p-4 glass-panel-light rounded-xl border border-white/80 shadow-md">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-brand-700 text-white flex items-center justify-center font-bold shrink-0">
+                  <i data-lucide="building-2" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <h4 class="text-slate-900 font-bold text-sm">Pioneer Centre Operating Facility</h4>
+                  <p class="text-slate-600 text-xs">1 Soon Lee Street, #01-11, Singapore 627605</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Operational Pillars -->
+      <div class="space-y-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Company Capabilities</span>
+          <h2 class="text-3xl font-extrabold text-slate-900">Four Core Pillars of APG Operations</h2>
+          <p class="text-slate-600 text-sm">Integrated end-to-end scrap management solutions built for corporate efficiency and environmental compliance.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-brand-100 text-brand-700 flex items-center justify-center font-bold">
+              <i data-lucide="scale" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Metals & Commodity Trading</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Wholesale purchasing and sorting of millberry copper, brass, aluminum extrusions, insulated cables, and stainless steel 304/316 per ISRI standards.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-orange-100 text-accent-600 flex items-center justify-center font-bold">
+              <i data-lucide="hard-hat" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Site Demolition & Salvage</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Turnkey structural demolition salvage, rebar recovery, heavy beam dismantling, and oxy-acetylene torch rigs for building and factory clearance.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center font-bold">
+              <i data-lucide="truck" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">Heavy Logistics Fleet</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              In-house fleet of 25-ton to 100-ton lorry cranes, hook-lift container trucks, and heavy low-bed trailers providing fast islandwide pickup.
+            </p>
+          </div>
+
+          <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200 space-y-3 shadow-sm hover:shadow-md transition">
+            <div class="w-12 h-12 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold">
+              <i data-lucide="leaf" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">ESG & Circular Economy</h3>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Certified zero-landfill diversion reports and ESG audit metrics helping enterprise clients align with Singapore Green Plan 2030 targets.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Advanced Technology & Verification Standard -->
+      <div class="bg-slate-50 rounded-2xl p-8 sm:p-12 border border-slate-200 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-7 space-y-4">
+          <span class="text-xs font-bold text-brand-700 uppercase tracking-widest bg-emerald-100 px-3 py-1 rounded-full">Quality Assurance</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900">Precision Testing & Digital Weighing Technology</h3>
+          <p class="text-slate-600 text-sm leading-relaxed">
+            At APG Recycling, we eliminate guesswork and ensure 100% pricing accuracy using state-of-the-art metallurgical testing equipment and calibrated digital scale indicators:
+          </p>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+            <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+              <i data-lucide="zap" class="w-5 h-5 text-brand-700 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-slate-900 text-xs block">Handheld XRF Spectrometers</span>
+                <span class="text-[11px] text-slate-500">Instant non-destructive alloy verification for stainless 304/316, nickel, and copper purity.</span>
+              </div>
+            </div>
+            <div class="flex items-start gap-3 bg-white p-3.5 rounded-xl border border-slate-200 shadow-sm">
+              <i data-lucide="shield-check" class="w-5 h-5 text-brand-700 shrink-0 mt-0.5"></i>
+              <div>
+                <span class="font-bold text-slate-900 text-xs block">Digital Weighbridge Indicators</span>
+                <span class="text-[11px] text-slate-500">Periodically calibrated scales guaranteeing 100% weight transparency with instant printouts.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-4">
+          <h4 class="text-base font-bold text-slate-900 border-b border-slate-100 pb-3 flex items-center gap-2">
+            <i data-lucide="file-text" class="w-5 h-5 text-brand-700"></i> Official Corporate Credentials
+          </h4>
+          <dl class="space-y-2.5 text-xs text-slate-700">
+            <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <dt class="text-slate-500">Registered Name:</dt>
+              <dd class="font-bold text-slate-900">APG Recycling Pte. Ltd.</dd>
+            </div>
+            <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <dt class="text-slate-500">Unique Entity Number (UEN):</dt>
+              <dd class="font-bold text-brand-700">201436195N</dd>
+            </div>
+            <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <dt class="text-slate-500">Incorporation Date:</dt>
+              <dd class="font-bold text-slate-900">4 December 2014</dd>
+            </div>
+            <div class="flex justify-between border-b border-slate-100 pb-1.5">
+              <dt class="text-slate-500">Registered Address:</dt>
+              <dd class="font-semibold text-slate-900 text-right">1 Soon Lee St, #01-11 Pioneer Centre, SG 627605</dd>
+            </div>
+            <div class="flex justify-between pt-1">
+              <dt class="text-slate-500">Primary Industry:</dt>
+              <dd class="font-semibold text-slate-900">Scrap Metal Merchant & Salvage</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+
+      <!-- Corporate Timeline / Growth Milestones -->
+      <div class="space-y-8">
+        <div class="text-center max-w-3xl mx-auto space-y-3">
+          <span class="text-brand-700 font-bold text-xs uppercase tracking-widest bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Growth Journey</span>
+          <h2 class="text-3xl font-extrabold text-slate-900">APG Recycling Operational Milestones</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-2 shadow-sm relative">
+            <span class="text-2xl font-extrabold text-brand-700 block">2014</span>
+            <h4 class="font-bold text-slate-900 text-sm">Company Incorporation</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              APG Recycling Pte. Ltd. incorporated (UEN 201436195N) to serve Singapore's industrial scrap metal market.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-2 shadow-sm relative">
+            <span class="text-2xl font-extrabold text-brand-700 block">2017</span>
+            <h4 class="font-bold text-slate-900 text-sm">Pioneer Centre Yard Expansion</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Expanded Pioneer Centre warehouse facility to over 10,000 sq ft with dedicated non-ferrous sorting bays.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-2 shadow-sm relative">
+            <span class="text-2xl font-extrabold text-brand-700 block">2021</span>
+            <h4 class="font-bold text-brand-700 text-sm">Heavy Crane Fleet Launch</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Acquired 25t – 100t lorry cranes and hook-lift container trucks for direct factory skip placements.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200 space-y-2 shadow-sm relative">
+            <span class="text-2xl font-extrabold text-brand-700 block">2026</span>
+            <h4 class="font-bold text-slate-900 text-sm">500+ Corporate Clients</h4>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Processing 15,000+ tons of scrap metal annually with full ESG reporting and instant PayNow payouts.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Banner with Site-Related Background Image -->
+  <section class="relative py-20 text-white overflow-hidden shadow-inner">
+    <div class="absolute inset-0 z-0">
+      <img src="images/steel-scrap.jpg" alt="APG Recycling Facilities" class="w-full h-full object-cover opacity-30">
+      <div class="absolute inset-0 bg-gradient-to-r from-brand-900/90 via-brand-800/85 to-brand-900/90 backdrop-blur-[2px]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
+      <span class="inline-block bg-emerald-500/20 text-emerald-300 font-extrabold text-xs uppercase tracking-widest px-3 py-1 rounded-full border border-emerald-400/30">Partner With APG Recycling</span>
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Looking for a Reliable Corporate Scrap Merchant?</h2>
+      <p class="text-emerald-100 max-w-2xl mx-auto text-base sm:text-lg">Contact our corporate account management team for custom scrap contract solutions or site inspections.</p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <button @click="openModal('About Page CTA Quote')" class="bg-white text-brand-900 font-extrabold px-8 py-4 rounded-xl shadow-xl hover:bg-emerald-50 hover:scale-[1.02] transition flex items-center justify-center gap-2">
+          <i data-lucide="phone-call" class="w-5 h-5 text-brand-700"></i> Speak to Specialist (+65 6694 3394)
+        </button>
+        <a href="contact.html" class="bg-emerald-950/80 hover:bg-emerald-950 text-white font-bold px-8 py-4 rounded-xl border border-emerald-500/40 shadow-xl transition flex items-center justify-center gap-2">
+          <i data-lucide="map-pin" class="w-5 h-5 text-emerald-400"></i> Visit Pioneer Centre
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Light Theme) -->
+  <footer class="bg-slate-50 border-t border-slate-200 text-slate-600 text-sm py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-9 h-9 rounded-lg bg-brand-700 text-white flex items-center justify-center font-bold text-lg">
+              <i data-lucide="recycle" class="w-5 h-5"></i>
+            </div>
+            <span class="font-extrabold text-slate-900 text-lg tracking-tight">APG RECYCLING</span>
+          </div>
+          <p class="text-xs text-slate-500 leading-relaxed">Singapore's licensed scrap metal merchant specializing in non-ferrous metals, ferrous steel, cables, and heavy demolition salvage.</p>
+          <span class="text-[11px] font-semibold text-slate-500 block">UEN: 201436195N</span>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 mb-3 text-xs uppercase tracking-wider">Scrap Categories</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="product-ferrous-steel.html" class="hover:text-brand-700 transition">Ferrous Scrap & Heavy Melting Steel</a></li>
+            <li><a href="product-copper-scrap.html" class="hover:text-brand-700 transition">Copper Scrap (Millberry & Tubing)</a></li>
+            <li><a href="product-aluminum-scrap.html" class="hover:text-brand-700 transition">Aluminum Extrusions & Alloy</a></li>
+            <li><a href="product-cables-wire.html" class="hover:text-brand-700 transition">Insulated Copper Cables & Wire</a></li>
+            <li><a href="product-machinery-motors.html" class="hover:text-brand-700 transition">Electric Motors & Machinery Scrap</a></li>
+            <li><a href="product-stainless-steel.html" class="hover:text-brand-700 transition">Stainless Steel (304 / 316)</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 mb-3 text-xs uppercase tracking-wider">Services</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="service-industrial-scrap.html" class="hover:text-brand-700 transition">Industrial Scrap Collection</a></li>
+            <li><a href="service-demolition-salvage.html" class="hover:text-brand-700 transition">Demolition & Metal Salvage</a></li>
+            <li><a href="service-machinery-transport.html" class="hover:text-brand-700 transition">Machinery Removal & Transport</a></li>
+            <li><a href="service-steel-rental.html" class="hover:text-brand-700 transition">Steel Plate & H-Beam Rental</a></li>
+            <li><a href="service-digital-weighing.html" class="hover:text-brand-700 transition">Digital Weighbridge & Payout</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-slate-900 mb-3 text-xs uppercase tracking-wider">Contact & Location</h4>
+          <p class="text-xs text-slate-500 leading-relaxed mb-2">No 1 Soon Lee Street, #01-11 Pioneer Centre, Singapore 627605</p>
+          <p class="text-xs font-semibold text-slate-700">Mon - Sat: 8:00 AM – 6:00 PM</p>
+          <p class="text-xs text-slate-500">Sun & Public Holidays: Closed</p>
+        </div>
+      </div>
+
+      <div class="border-t border-slate-200 pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+        <span>© 2026 APG Recycling Pte. Ltd. All rights reserved.</span>
+        <div class="flex gap-4">
+          <a href="sitemap.xml" class="hover:text-brand-700">Sitemap</a>
+          <a href="robots.txt" class="hover:text-brand-700">Robots.txt</a>
+          <a href="contact.html" class="hover:text-brand-700">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Alpine Quote Modal -->
+  <div x-show="isOpen" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm" x-cloak>
+    <div @click.away="closeModal()" class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl space-y-4 border border-slate-200">
+      <div class="flex justify-between items-center border-b border-slate-100 pb-3">
+        <h3 class="text-xl font-bold text-slate-900">Request Rate Quote</h3>
+        <button @click="closeModal()" class="text-slate-400 hover:text-slate-600"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <p class="text-xs text-slate-500">Inquiring about: <strong x-text="serviceName" class="text-brand-700"></strong></p>
+
+      <form @submit.prevent="submitForm()" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Company / Contact Name *</label>
+          <input type="text" x-model="formData.name" required placeholder="e.g. John Tan" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number *</label>
+          <input type="tel" x-model="formData.phone" required placeholder="+65 9123 4567" class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-slate-700 uppercase mb-1">Estimated Quantity / Notes</label>
+          <textarea x-model="formData.notes" rows="3" placeholder="Describe material, estimated weight or requirements..." class="w-full px-3.5 py-2 rounded-lg border border-slate-300 text-sm focus:ring-2 focus:ring-brand-700 focus:outline-none"></textarea>
+        </div>
+        <button type="submit" class="w-full accent-gradient text-white font-bold py-3 rounded-lg shadow-md hover:brightness-110 transition flex items-center justify-center gap-2">
+          <i data-lucide="send" class="w-4 h-4"></i> Submit Quote Request
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
