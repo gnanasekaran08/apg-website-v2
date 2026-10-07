@@ -20,10 +20,12 @@ window.apgQuoteModal = function() {
       this.itemTitle = title;
       this.isOpen = true;
       this.submitted = false;
+      document.body.style.overflow = 'hidden';
     },
 
     closeModal() {
       this.isOpen = false;
+      document.body.style.overflow = '';
     },
 
     submitQuote() {
@@ -36,6 +38,7 @@ window.apgQuoteModal = function() {
         alert(`Thank you, ${this.fullName}! Your scrap metal valuation request for ${this.itemTitle} has been submitted. Our team will contact you at ${this.phone} shortly.`);
         this.isOpen = false;
         this.submitted = false;
+        document.body.style.overflow = '';
       }, 800);
     }
   };
